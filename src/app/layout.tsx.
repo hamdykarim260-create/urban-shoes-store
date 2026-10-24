@@ -1,0 +1,21 @@
+
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "KAHASTORE | Move Different",
+  description:
+    "Discover your next favorite pair at KAHASTORE, your destination for everyday sneakers and street style in Egypt.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
